@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="icon" href="Resource/testing-checklist-or-to-do-list-and-checkmark-17461.svg">
+    <link rel="stylesheet" href="/index.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header_content">
+            <div class="logo">
+                <img src="Resource/testing-checklist-or-to-do-list-and-checkmark-17461.svg" alt="">
+                <h1>Todo List</h1>
+            </div>
+
+            <nav>
+                <a href="/index.html">Tasks</a>
+                <a href="/compleateTask.html">Compleated Tasks</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <button data-modal-btn="add_task">Add task</button>
+        </aside>
+
+        <div class="main_content">
+            <ul class="task_cards">
+            </ul>
+        </div>
+    </main>
+
+    <div data-modal-window="add_task" class="modal">
+        <div class="modal_content">
+            <header>
+                <div>
+                    <h3>Add Task</h3>
+                </div>
+            </header>
+            
+            <input type="text" placeholder="Name task">
+            <input type="text" placeholder="Description task">
+
+            <div class="modal_buttons">
+                <button class="cancel_button">Cancel</button>
+                <button class="add_button">Add</button>
+            </div>
+        </div>
+    </div>
+    <script src="/index.js" defer></script>
+</body>
+</html>
