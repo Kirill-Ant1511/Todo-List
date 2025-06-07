@@ -1,6 +1,9 @@
 # What is this?
 It's simple **Todo List**
+v0.1
 You can add tasks, mark them as compleate are tasks and delete theme.
+v0.2
+Now your tasks loading from local storage, and after adding your tasks saving to local storage
 
 ## Example of uses
 - Main menu
@@ -14,4 +17,4 @@ You can add tasks, mark them as compleate are tasks and delete theme.
 </div>
 
 # Future
-Add saving to localStore. I am want add adaptive for phone and other more smaller devices. I will also do a delete for the task that is completed
+Do adaptive for phone and more smaller devices.

@@ -59,6 +59,7 @@ function updateTasks() {
         taskCard.insertAdjacentHTML('beforeend', task);
         if (element.isCompleted) {
             taskCard.querySelectorAll("h3")[index].style.textDecoration = "line-through";
+            taskCard.querySelectorAll(".card")[index].style.backgroundColor = "#00DD67"
         }   
     })
     const compleatedBtns = document.querySelectorAll(".compleate_button");
