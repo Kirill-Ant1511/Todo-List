@@ -4,8 +4,24 @@ let modal = document.querySelector("*[data-modal-window='"+name+"']");
 const addBtn = modal.querySelector(".add_button");
 const closeBtn = modal.querySelector(".cancel_button");
 
-let tasks = []
+let tasks = getDataWithoutLocalStorage();
 updateTasks()
+
+function getDataWithoutLocalStorage() {
+    const arrayData = localStorage.getItem("tasks");
+    const result = JSON.parse(arrayData);
+    console.log(result ?? [])
+    return result ?? [];
+}
+
+function saveDataInLocalStorage(item) {
+    try {
+        const serializationData = JSON.stringify(item)
+        localStorage.setItem("tasks", serializationData);
+    } catch {
+        console.log(error);
+    }
+}
 
 function completeTask(index) {
     tasks[index].isCompleted = tasks[index].isCompleted ? false : true;
@@ -63,6 +79,8 @@ function updateTasks() {
             deleteTask(i);
         })
     }
+
+    saveDataInLocalStorage(tasks);
 }
 
 function addElement(title, description, index) {
