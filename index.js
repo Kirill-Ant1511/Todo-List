@@ -39,7 +39,7 @@ function updateTasks() {
     if (tasks.length == 0) {
         const noTasks = `
             <div class="no_tasks">
-                <h1>Пока что нету задач</h1>
+                <h1>There are no tasks yet</h1>
             </div>
         `
         taskCard.insertAdjacentHTML('beforeend', noTasks);
