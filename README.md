@@ -1,9 +1,14 @@
 # What is this?
 It's simple **Todo List**
+
+
 v0.1
 You can add tasks, mark them as compleate are tasks and delete theme.
+
+
 v0.2
 Now your tasks loading from local storage, and after adding your tasks saving to local storage
+
 
 ## Example of uses
 - Main menu
